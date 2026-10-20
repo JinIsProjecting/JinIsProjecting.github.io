@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Jin Zhi</title><script>
+(function () {
+  var path = location.pathname.replace(/\/+$/, '') + '/';
+  if (location.pathname !== path) {
+    location.replace(path + location.search + location.hash);
+  } else {
+    location.replace('/' + location.search + location.hash);
+  }
+})();
+</script></head><body></body></html>
