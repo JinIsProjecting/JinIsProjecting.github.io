@@ -1,17 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Jin Zhi</title>
-<script>
-  var l = window.location;
-  var path = l.pathname;
-  if (path.length > 1 && !path.endsWith('/') && !/\.[a-zA-Z0-9]+$/.test(path)) {
-    l.replace(l.protocol + '//' + l.host + path + '/' + l.search + l.hash);
-  } else {
-    l.replace(l.protocol + '//' + l.host + '/' + l.search + l.hash);
-  }
-</script>
-</head>
-<body></body>
-</html>
+<!doctype html><html><head><meta charset="utf-8"><script>var p=location.pathname;if(!p.endsWith('/')&&!/\.[^/]+$/.test(p)){location.replace(p+'/'+location.search+location.hash);}else{location.replace('/');}</script></head><body></body></html>
